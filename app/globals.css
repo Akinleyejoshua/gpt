@@ -50,6 +50,7 @@ body {
 
 .error{
   padding: .3rem;
+  margin: auto;
 }
 
 
@@ -253,6 +254,10 @@ footer{
  
 }
 
+.chat .error{
+  margin: 0;
+}
+
 .chat .input{
   margin: 0;
   place-self: start;
@@ -302,4 +307,5 @@ footer{
     .chat-section{
       padding: 0 1.3rem;
     }
+
 }
