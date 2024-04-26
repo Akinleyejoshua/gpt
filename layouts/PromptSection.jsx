@@ -32,6 +32,8 @@ const err = useSelector(state => state.prompt.err);
                 }
             } catch (err){
                 dispatch(setErr("Connection error"))
+                dispatch(setLoader(false));
+
             }
             
         } else {
