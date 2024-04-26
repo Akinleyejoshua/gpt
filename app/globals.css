@@ -48,6 +48,10 @@ body {
   color: white;
 }
 
+.error{
+  padding: .3rem;
+}
+
 
 .container {
   display: flex;
@@ -206,7 +210,7 @@ footer{
   padding-bottom: 10rem;
 }
 
-.chat-section p{
+.chat-section .bot{
   margin-left: auto;
   background-color: rgb(29, 27, 27);
   padding: .3rem 1rem;
@@ -253,4 +257,49 @@ footer{
   margin: 0;
   place-self: start;
   align-self: flex-start;
+}
+
+@media screen and (max-width: 640px) {
+
+    header {
+      padding: 1.3rem;
+    }
+
+    .nav-brand a{
+      font-size: 13px;
+    }
+
+    section.body{
+      padding: 1.3rem;
+    }
+
+    h1{
+      font-size: 30px;
+    }
+
+    .input-bar input{
+      width: 100%;
+    }
+
+    section.prompt-section{
+      padding: 1.3rem;
+    }
+
+    .prompt-section button{
+      padding: .3rem 1.3rem;
+    }
+
+    footer{
+      padding: 1.3rem;
+      font-size: 12px;
+    }
+
+    .chat .prompt-section{
+      padding: 1.3rem;
+     
+    }
+
+    .chat-section{
+      padding: 0 1.3rem;
+    }
 }

@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
+  err: "",
   prompt: "",
   loading: false,
   msg: [
@@ -22,9 +23,12 @@ export const promptSlice = createSlice({
     },
     setLoader: (state, action) => {
       state.loading = action.payload;
+    },
+    setErr: (state, action) => {
+      state.err = action.payload;
     }
   },
 });
 
-export const { setPrompt, setMsg, setLoader } = promptSlice.actions;
+export const { setPrompt, setMsg, setLoader, setErr } = promptSlice.actions;
 export const promptReducer = promptSlice.reducer;

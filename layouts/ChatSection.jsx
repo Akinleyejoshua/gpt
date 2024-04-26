@@ -36,9 +36,9 @@ export const ChatSection = () => {
                 return <div className="msg col" key={i}>
                     <h4>{item?.you}</h4>
                     <Space p=".6" />
-                    <p className="dim">
+                    <div className="bot">
                     <Typing text={item?.bot}/>
-                    </p>
+                    </div>
                 </div>
             })}
         </div>
