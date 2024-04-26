@@ -19,7 +19,8 @@ export const promptSlice = createSlice({
     setMsg: (state, action) => {
       const val = action.payload;
       state.msg.push({bot: val.bot, you: val.you});
-      state.prompt = ""
+      state.prompt = "";
+      state.err = "";
     },
     setLoader: (state, action) => {
       state.loading = action.payload;
